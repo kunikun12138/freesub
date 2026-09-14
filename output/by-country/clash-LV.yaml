@@ -5,18 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
-  server: 138.124.180.137
-  port: 443
+  server: uycneynsieuocxniseunciusecmsepiock.novexgroup.ir
+  port: 2096
   udp: true
   type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
+  uuid: 1a67126c-b9c4-4e78-b96e-eabd4002ab0c
   tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: uycneynsieuocxniseunciusecmsepiock.novexgroup.ir
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
