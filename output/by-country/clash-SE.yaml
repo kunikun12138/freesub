@@ -15,7 +15,7 @@ proxies:
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
   servername: www.blocket.se
-  client-fingerprint: randomized
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
