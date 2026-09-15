@@ -5,23 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 144.225.65.173
-  port: 443
+  server: 13.143.137.164
+  port: 9443
   udp: true
   type: vless
-  uuid: 35f8b8f4-b64d-4807-85f2-cc9a88d2ab8d
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 156.67.63.231
-  port: 443
-  udp: true
-  type: vless
-  uuid: b052df40-d51c-456c-9bd6-57af01a87e4e
+  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI
-    short-id: 5606d4a25c99e7af
-  servername: sync-bridge.org
+    public-key: dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ
+    short-id: e336c9a786fae301
+  servername: plaincanvas.videoclothing.xyz
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -29,13 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
 rules:
 - MATCH,PROXIES

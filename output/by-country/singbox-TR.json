@@ -6,28 +6,21 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "144.225.65.173",
-      "server_port": 443,
-      "uuid": "35f8b8f4-b64d-4807-85f2-cc9a88d2ab8d"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaohe",
-      "server": "156.67.63.231",
-      "server_port": 443,
-      "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
+      "server": "13.143.137.164",
+      "server_port": 9443,
+      "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sync-bridge.org",
+        "server_name": "plaincanvas.videoclothing.xyz",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PTqeBbbr2xJ1L3V1PyYjKjxanMKKqJHU-wtnpYmFQCI",
-          "short_id": "5606d4a25c99e7af"
+          "public_key": "dZ0rhO_PL67-Ciwc6CHQgtde3a5EUUuReA7M-lRNCDQ",
+          "short_id": "e336c9a786fae301"
         }
       }
     },
@@ -36,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-        "🇹🇷 土耳其 (Turkey) 02 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,22 +6,14 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
-      "server": "82.198.246.37",
+      "server": "82.198.246.233",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-      "server": "67.220.95.3",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
       "server": "103.75.119.126",
       "server_port": 2087,
       "uuid": "731f177e-00aa-480c-b935-661456139a32",
@@ -32,17 +24,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaohe",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
       "server": "au1.gsafevpnapi.com",
       "server_port": 20270,
-      "uuid": "5416ef6f-b8e5-48e9-87e4-3d5649b2e3e0",
+      "uuid": "e9e24ed8-b007-4e29-b54f-1ece641e60fb",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -58,8 +50,7 @@
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ]
     },
     {
@@ -68,8 +59,7 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaohe",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe",
-        "🇦🇺 澳大利亚 (Australia) 04 - xiaohe"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

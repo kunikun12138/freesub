@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaohe",
-      "server": "108.162.198.178",
-      "server_port": 2052,
+      "server": "172.64.229.170",
+      "server_port": 8880,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -20,10 +20,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe",
-      "server": "r3mrcg001287h3p.cybervena.com",
+      "server": "61.231.15.229",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+      "password": "b1ae0fce-9340-4f2e-882d-fdb2218e2e2b"
     },
     {
       "type": "selector",
