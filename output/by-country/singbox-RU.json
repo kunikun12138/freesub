@@ -12,12 +12,16 @@
       "password": "81a20429165df87e"
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
-      "server": "194.87.196.13",
-      "server_port": 7018,
-      "method": "aes-256-gcm",
-      "password": "4938e975724d0ed1"
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "91.196.32.163",
+        "insecure": true
+      }
     },
     {
       "type": "shadowsocks",
@@ -36,12 +40,16 @@
       "password": "895b4b796a357570"
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaohe",
-      "server": "195.58.48.137",
-      "server_port": 7018,
-      "method": "aes-256-gcm",
-      "password": "8ad9d72a5571df86"
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "off",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
@@ -56,16 +64,12 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 07 - xiaohe",
-      "server": "srv-17e124.21freedom.net",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
+      "server": "195.58.48.137",
+      "server_port": 7018,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
     },
     {
       "type": "selector",
