@@ -4,24 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
-      "server": "104.18.8.83",
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
+      "server": "8.47.69.9",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
+        "server_name": "ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV",
         "insecure": false,
-        "alpn": [
-          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "ancient-heart-60c5.dpccgizieb.workers.dev"
         }
       }
     },
@@ -30,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
