@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe
-  server: R3MRCG001287H3P.cybervena.com
+  server: r3mrcg001287h3p.cybervena.com
   port: 50099
   udp: true
   type: ss
@@ -25,8 +25,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 82259754d625.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
