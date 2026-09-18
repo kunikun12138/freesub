@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "132.243.203.207",
-      "server_port": 8443,
+      "server": "188.130.207.30",
+      "server_port": 2053,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -16,25 +16,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/lives",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - xiaohe",
-      "server": "138.124.25.250",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws",
+        "path": "/m",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -45,16 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - xiaohe",
-        "🇨🇿 捷克 (Czech) 02 - xiaohe"
+        "🇨🇿 捷克 (Czech) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
