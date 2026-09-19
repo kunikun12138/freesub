@@ -29,6 +29,14 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -37,18 +45,6 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: 95.85.224.17
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

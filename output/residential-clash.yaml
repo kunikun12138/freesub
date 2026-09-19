@@ -4,18 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
-  server: 172.64.52.6
-  port: 2052
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
+  server: 525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tlssecurity=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  type: hysteria2
+  password: e1dee7c0-cff7-11eb-a8bf-f23c91cfbbc9
+  sni: 525b1a38-tly2o0-tn5bnx-19xg1.nw4.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
+  server: 36.224.185.173
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
   server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   port: 443
   udp: true
@@ -31,7 +35,7 @@ proxies:
     path: /
     headers:
       Host: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
   server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
   port: 443
   udp: true
@@ -45,23 +49,23 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaohe
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaohe
 rules:
 - MATCH,PROXIES
