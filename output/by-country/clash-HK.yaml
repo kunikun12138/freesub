@@ -12,7 +12,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: wwj19enpp68px8t7
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 162.128.157.164
+  server: 103.136.150.119
+  port: 10081
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: vj37-1936vtw.fincore.top
   port: 443
   udp: true
   type: vless
@@ -23,15 +30,44 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: qq
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 103.136.150.119
-  port: 10081
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%2fripaojiedian
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  server: 193.134.211.12
+  port: 40229
+  udp: true
+  type: vless
+  uuid: fd33946a-ad66-48bb-bece-36a19009a20e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NdYhIYluMQg_VZTxYc9DtlCWl6bNDXS421HBsTECaBE
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
   server: 202.146.222.174
   port: 443
   udp: true
@@ -39,24 +75,47 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
-  server: 202.146.222.29
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  server: 46.17.44.112
+  port: 10301
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
+  server: 207.57.135.28
+  port: 27659
+  udp: true
+  type: vless
+  uuid: ecee6ef1-5172-4543-bf81-e4aaf64db01c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KFp1q4xOR_FZQYwRBFTLhyf5cOSVjrPNDkUG-RblNmg
+  servername: www.paypal.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  server: mz.hkychina.com
+  port: 8443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: 202.146.222.89
-  port: 443
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  server: 45.152.65.68
+  port: 37574
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
-  server: 8.222.70.238
+  type: vless
+  uuid: e2353f83-9a40-4b46-82e1-666b1652d479
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Pu-3VzlM8PPRnOTVZOC8HVGr4WwG5yOYiIrbVJYU5RI
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  server: 160.30.54.63
   port: 443
   udp: true
   type: vless
@@ -64,12 +123,13 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -82,35 +142,7 @@ proxies:
     short-id: af1bdd293097b664
   servername: tesla.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  server: 8.222.84.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  server: 151.242.189.162
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /chat?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
   server: 195.58.144.56
   port: 11907
   udp: true
@@ -119,14 +151,7 @@ proxies:
   tls: true
   servername: 195.58.144.56
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
-  server: 119.246.1.143
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +169,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -161,5 +189,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaohe
 rules:
 - MATCH,PROXIES

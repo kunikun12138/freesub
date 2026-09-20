@@ -11,13 +11,36 @@
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "itsallproxy.quattro-tech.ru",
-        "insecure": false
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+      "server": "185.113.223.183",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/channels/act",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -28,12 +51,26 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaohe",
+      "server": "gta.internet-card.sbs",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "gta.internet-card.sbs",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ]
     },
     {
@@ -41,7 +78,9 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - xiaohe",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
+        "🇷🇺 俄罗斯 (Russia) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
