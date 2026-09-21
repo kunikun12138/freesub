@@ -41,8 +41,8 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaohe",
-      "server": "157.173.125.214",
-      "server_port": 2087,
+      "server": "103.31.77.108",
+      "server_port": 2053,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -55,7 +55,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/redirect/china/view?ed=2560",
+        "path": "/channels/act",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }

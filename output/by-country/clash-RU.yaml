@@ -28,8 +28,8 @@ proxies:
   sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 157.173.125.214
-  port: 2087
+  server: 103.31.77.108
+  port: 2053
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -39,7 +39,7 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /redirect/china/view?ed=2560
+    path: /channels/act
     headers:
       Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
