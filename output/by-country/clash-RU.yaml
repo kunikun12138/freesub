@@ -5,14 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+  server: 94.228.171.159
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5b754a1a-11aa-4df9-a8ba-44af9a579fe1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hcjZwWlIplwEKT-Ea-vTM2n4jwiTCeL9wTUZG0WgCj0
+  servername: de.b2ai.top
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -24,7 +36,7 @@ proxies:
     short-id: 23103e1e
   servername: ya.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
   server: 46.8.200.91
   port: 443
   udp: true
@@ -38,14 +50,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: msk.frkn.org
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
