@@ -24,7 +24,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -36,7 +36,11 @@
       "tls": {
         "enabled": true,
         "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
       },
       "transport": {
         "type": "ws",

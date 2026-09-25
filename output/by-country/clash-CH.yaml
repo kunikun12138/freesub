@@ -19,7 +19,7 @@ proxies:
   type: hysteria2
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaohe
   server: 151.242.2.81
   port: 443
@@ -29,6 +29,7 @@ proxies:
   tls: true
   servername: cf9.rumedia-cdn.com
   skip-cert-verify: false
+  client-fingerprint: qq
   network: ws
   ws-opts:
     path: /cdn/v3/live
