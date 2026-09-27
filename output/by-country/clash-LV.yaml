@@ -6,33 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  server: 185.135.86.175
   port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
   server: 185.135.86.175
   port: 9034
   udp: true
@@ -46,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01 - xiaohe
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaohe
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

@@ -23,7 +23,7 @@ proxies:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
     short-id: 72ccd4a7563c2953
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
@@ -37,12 +37,13 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: 77.239.126.219
-  port: 9443
+  server: 94.183.170.135
+  port: 8443
   udp: true
-  type: hysteria2
-  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  sni: onecloudstream.com
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  tls: true
+  servername: estproxy4.lockdwn.com
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   server: 94.183.170.65
@@ -56,15 +57,6 @@ proxies:
     headers:
       Host: hys2.arkonsoft.top
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 94.183.170.135
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  tls: true
-  servername: estproxy4.lockdwn.com
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
   server: 94.183.170.65
   port: 443
   udp: true
@@ -83,7 +75,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,6 +86,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaohe
 rules:
 - MATCH,PROXIES
