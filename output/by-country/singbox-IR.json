@@ -4,13 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇷 IR 01 - xiaohe",
-      "server": "service.erisrtg.ir",
-      "server_port": 9098,
-      "uuid": "9730ec36-a1d8-4cae-a246-fde2678be5df",
+      "server": "199.232.78.101",
+      "server_port": 443,
+      "password": "MiTiVPN",
+      "tls": {
+        "enabled": true,
+        "server_name": "ssl.fastly.com",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
+        "headers": {
+          "Host": "mitivpn---de--s---mitivpn-1.global.ssl.fastly.net"
+        }
       }
     },
     {

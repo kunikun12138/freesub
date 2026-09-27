@@ -5,14 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaohe
-  server: service.erisrtg.ir
-  port: 9098
+  server: 199.232.78.101
+  port: 443
   udp: true
-  type: vless
-  uuid: 9730ec36-a1d8-4cae-a246-fde2678be5df
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  type: trojan
+  password: MiTiVPN
+  sni: ssl.fastly.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
 - name: 🇮🇷 IR 02 - xiaohe
   server: 62.60.152.1
   port: 56328
