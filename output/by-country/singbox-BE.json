@@ -5,21 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaohe",
-      "server": "92b6d0ff54070b56.IROnlY4l.Ir",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
+      "server": "35.240.62.249",
       "server_port": 443,
-      "uuid": "0b47cd2c-cd11-4398-a323-ef4a08475e77",
+      "uuid": "6d341f6e-7b9d-4ae3-999b-00333de7bdfb",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pLbqDSeEe7biTe6b-w6SOLl2SiRxIBjHMfqUzuRR3Ew",
-          "short_id": "37d86205006fe1fb"
+          "public_key": "v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws",
+          "short_id": "31f187650d9530bb"
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
