@@ -4,28 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaohe",
       "server": "165.154.195.38",
       "server_port": 35034,
       "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
       "security": "auto"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaohe",
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-tw-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaohe",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https:",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
       "server": "35.201.181.122",
       "server_port": 443,
       "uuid": "22a0b0bd-1cd0-43fa-a7c3-73b24eae44e2",
@@ -34,25 +46,13 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
           "public_key": "PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0",
           "short_id": "32f66f37df3f58d2"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaohe",
-      "server": "vpn-tw-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
       }
     },
     {
