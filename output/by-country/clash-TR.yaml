@@ -5,25 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: bale.xv98.ir
-  port: 5051
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 68mL2QkZEBlxWa3hcslGDw
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 83.217.9.140
-  port: 43000
+  server: 49.13.231.249
+  port: 33483
   udp: true
   type: vless
-  uuid: 85163fd9-6f73-4eea-b1df-3b327dacbabf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ptE_QnAka3pXNEf8BYKpA9CHdgj4U4xXTixjYWOji0U
-    short-id: 68d2eb23
-  servername: 83.217.9.140
-  client-fingerprint: chrome
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+  server: apadana.gamingnet.ir
+  port: 33483
+  udp: true
+  type: vless
+  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
