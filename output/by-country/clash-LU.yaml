@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
-  server: lbeiggdz.smart-cats.ru
+  server: 193.57.88.7
   port: 443
   udp: true
   type: vless
@@ -15,21 +15,60 @@ proxies:
     public-key: mzrVbIsEggpJfXR8M7yxki2vgv3sXWQdy1bGhXqatUY
     short-id: 79651ae525860543
   servername: vk.com
-  client-fingerprint: firefox
+  client-fingerprint: edge
   network: grpc
   grpc-opts:
     grpc-service-name: haknewhpjmv
+- name: 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
+  server: 188.42.145.180
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.volumeroot.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe
+  server: 188.42.145.180
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.volumeroot.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇱🇺 卢森堡 (Luxembourg) 04 - xiaohe
+  server: 188.42.145.180
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.volumeroot.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 04 - xiaohe
 rules:
 - MATCH,PROXIES
