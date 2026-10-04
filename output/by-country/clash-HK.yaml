@@ -10,30 +10,28 @@ proxies:
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 5koepr9k4rjabc1z
+  password: n7vuxdsmlqnrbxqe
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
+  server: telegram.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: telegramx.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: m5nsedvdczx6x06e
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
-  server: ddfd0b64-tmm5c0-u0aht1-1rz5s.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 40e084d6-0316-11f0-90e2-f23c913c8d2b
-  sni: ddfd0b64-tmm5c0-u0aht1-1rz5s.nw4.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
   server: 202.146.222.29
@@ -41,17 +39,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaohe
-  server: f60ef7cf-tmm5c0-trdynx-1rk9y.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
-  sni: f60ef7cf-tmm5c0-trdynx-1rk9y.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
   server: 185.244.208.69
   port: 443
   udp: true
@@ -59,40 +49,23 @@ proxies:
   password: UX82473651
   sni: strong-haddock.rooster465.autos
   skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaohe
+  server: 93ucrn4i0pffuabk.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaohe
-  server: jumpernode.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 23af32ca-bea1-4a5e-bebb-04d1b1b633bc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
-    short-id: 6d962e8d8a0dce
-  servername: p-nt-www-amazon-com-kalias.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
-  server: 34.96.188.243
-  port: 443
-  udp: true
-  type: vless
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  tls: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-    short-id: 64b3f192fc0669e1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -100,7 +73,15 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaohe
   server: 194.99.79.26
   port: 443
   udp: true
@@ -116,6 +97,22 @@ proxies:
     path: /linkvws
     headers:
       Host: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaohe
+  server: 11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  sni: 11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaohe
+  server: ru1.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru1.xiaoliyu.cyou
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
