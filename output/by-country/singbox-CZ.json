@@ -23,7 +23,6 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN",
         "headers": {
           "Host": "mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net"
         }

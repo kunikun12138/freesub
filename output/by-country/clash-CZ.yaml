@@ -14,7 +14,7 @@ proxies:
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/NLSus---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN/---@MiTiVPN---@MiTiVPN
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
