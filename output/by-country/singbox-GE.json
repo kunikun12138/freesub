@@ -4,22 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaohe",
-      "server": "89.39.161.157",
+      "type": "vless",
+      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe",
+      "server": "172.67.159.161",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-      "security": "auto",
+      "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
       "tls": {
         "enabled": true,
-        "server_name": "aksai.org",
+        "server_name": "geo.shkola112.site",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws",
+        "path": "/api-vless",
         "headers": {
-          "Host": "aksai.org"
+          "Host": "geo.shkola112.site"
         }
       }
     },
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaohe"
+        "🇬🇪 格鲁吉亚 (Georgia) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
