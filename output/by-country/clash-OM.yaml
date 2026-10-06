@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
-  server: 195.238.126.20
-  port: 9012
+- name: 🇴🇲 OM 01 - xiaohe
+  server: w7k2mf.5tencent.asia
+  port: 35016
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  cipher: aes-128-gcm
+  password: 6ee847c4-04ef-4786-9720-eb6f73fbd80b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇴🇲 OM 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 (Lithuania) 01 - xiaohe
+  - 🇴🇲 OM 01 - xiaohe
 rules:
 - MATCH,PROXIES
