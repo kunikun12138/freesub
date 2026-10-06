@@ -29,7 +29,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/linkvws"
+        "path": "/linkvws",
+        "headers": {
+          "Host": "aksai.org"
+        }
       }
     },
     {
