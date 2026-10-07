@@ -5,17 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 151.241.226.201
-  port: 2053
+  server: 38.180.209.248
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
+  servername: cloud.surfweb.club
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
