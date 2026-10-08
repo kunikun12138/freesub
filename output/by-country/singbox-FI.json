@@ -6,14 +6,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "45.149.114.171",
-      "server_port": 777,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "185.103.110.68",
       "server_port": 18283,
       "method": "aes-128-gcm",
@@ -21,7 +13,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
       "server": "87.251.17.11",
       "server_port": 9443,
       "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
@@ -29,6 +21,27 @@
         "enabled": true,
         "server_name": "onecloudstream.com",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
+      "server": "van2.ragnarok-it.xyz",
+      "server_port": 8446,
+      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
+          "short_id": "7bac4b112d30d1"
+        }
       }
     },
     {
@@ -53,25 +66,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaohe",
-      "server": "van2.ragnarok-it.xyz",
-      "server_port": 8446,
-      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
-          "short_id": "7bac4b112d30d1"
-        }
-      }
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
       "type": "selector",
