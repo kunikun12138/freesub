@@ -5,28 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe",
-      "server": "80.243.228.84",
-      "server_port": 2085,
-      "uuid": "84a7add6-dab3-4af4-900b-192e3e338875",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇰 斯洛伐克 (Slovakia) 01 - xiaohe"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) R50 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
