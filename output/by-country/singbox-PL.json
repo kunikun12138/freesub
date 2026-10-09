@@ -7,12 +7,16 @@
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
       "server": "95.85.253.241",
-      "server_port": 2087,
+      "server_port": 2083,
       "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
       "tls": {
         "enabled": true,
         "server_name": "95.85.253.241",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
       }
     },
     {
@@ -55,25 +59,25 @@
     {
       "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "admin.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "server": "78.17.128.153",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
       "tls": {
         "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
+        "server_name": "scrap.halyvanedorogo.ru",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
-      "server": "95.85.253.241",
-      "server_port": 2083,
-      "uuid": "ee0a38e3-d148-48ac-ba99-5133446c2377",
+      "server": "202.78.163.237",
+      "server_port": 443,
+      "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "95.85.253.241",
-        "insecure": false
+        "server_name": "cheerful-swan.rooster465.autos",
+        "insecure": true
       }
     },
     {
@@ -98,20 +102,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
-      "server": "202.78.163.237",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "cheerful-swan.rooster465.autos",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaohe",
       "server": "31.77.13.19",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -131,6 +123,30 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 08 - xiaohe",
+      "server": "144.31.49.47",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 09 - xiaohe",
+      "server": "pol2.fytpn.com",
+      "server_port": 2097,
+      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
+      "tls": {
+        "enabled": true,
+        "server_name": "pol2.fytpn.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -142,7 +158,8 @@
         "🇵🇱 波兰 (Poland) 05 - xiaohe",
         "🇵🇱 波兰 (Poland) 06 - xiaohe",
         "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 08 - xiaohe",
+        "🇵🇱 波兰 (Poland) 09 - xiaohe"
       ]
     },
     {
@@ -156,7 +173,8 @@
         "🇵🇱 波兰 (Poland) 05 - xiaohe",
         "🇵🇱 波兰 (Poland) 06 - xiaohe",
         "🇵🇱 波兰 (Poland) 07 - xiaohe",
-        "🇵🇱 波兰 (Poland) 08 - xiaohe"
+        "🇵🇱 波兰 (Poland) 08 - xiaohe",
+        "🇵🇱 波兰 (Poland) 09 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
