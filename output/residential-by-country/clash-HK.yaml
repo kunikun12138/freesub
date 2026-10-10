@@ -13,6 +13,7 @@ proxies:
   tls: true
   servername: mswo-gy191m.zhiyuantech.cloud
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384

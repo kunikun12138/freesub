@@ -5,54 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  server: vpn-au-001.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  server: 51.161.204.242
+  server: 104.18.155.229
   port: 443
   udp: true
   type: vless
-  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
-  flow: xtls-rprx-vision
+  uuid: 42026ed0-7d74-4585-8e46-0fe6aa4d665a
   tls: true
-  reality-opts:
-    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
-    short-id: d15c17cef9b2e456
-  servername: www.cloudflare.com
+  servername: www.genflix.co.id.r3xxe.eu.cc
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
-  server: 2610sgdodo.volkvpn.com
-  port: 35715
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: ios
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: www.genflix.co.id.r3xxe.eu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 02 - xiaohe
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaohe
 rules:
 - MATCH,PROXIES
