@@ -24,20 +24,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
-  server: 185.220.249.44
-  port: 2053
+  server: 83.147.18.3
+  port: 443
   udp: true
   type: vless
-  uuid: 6d1590ed-4c0f-4bbc-931d-2431737615dd
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
   tls: true
-  servername: 185.220.249.44
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws-cdn1-vless
-    headers:
-      Host: es.fastmirror-labs.xyz
 proxy-groups:
 - name: PROXIES
   type: select

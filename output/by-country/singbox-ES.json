@@ -34,23 +34,21 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 03 - xiaohe",
-      "server": "185.220.249.44",
-      "server_port": 2053,
-      "uuid": "6d1590ed-4c0f-4bbc-931d-2431737615dd",
+      "server": "83.147.18.3",
+      "server_port": 443,
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "185.220.249.44",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-cdn1-vless",
-        "headers": {
-          "Host": "es.fastmirror-labs.xyz"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
         }
       }
     },
