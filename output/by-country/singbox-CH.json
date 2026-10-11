@@ -28,8 +28,56 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+      "server": "138.124.63.224",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+      "server": "81.94.148.104",
+      "server_port": 2096,
+      "uuid": "3fcec4e4-a674-44d2-8cae-c253cec43b9c",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaohe",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -42,7 +90,9 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe"
       ]
     },
     {
@@ -51,7 +101,9 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01 - xiaohe",
         "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe"
+        "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 04 - xiaohe",
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

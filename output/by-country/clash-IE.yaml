@@ -11,7 +11,7 @@ proxies:
   type: trojan
   password: UX82473651
   sni: master-possum.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   server: adapting-basilisk.rooster465.autos
   port: 443
@@ -29,6 +29,22 @@ proxies:
   sni: sacred-anemone.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
+  server: 3.253.106.233
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
   server: 3.255.76.207
   port: 443
   udp: true
@@ -45,6 +61,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +72,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaohe
   - 🇮🇪 爱尔兰 (Ireland) 04 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaohe
+  - 🇮🇪 爱尔兰 (Ireland) 06 - xiaohe
 rules:
 - MATCH,PROXIES
