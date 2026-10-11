@@ -4,64 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "136.175.82.85",
-      "server_port": 18775,
-      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe",
-      "server": "cloud.korroh.com",
-      "server_port": 443,
-      "uuid": "ec6f8131-7a5d-4117-9627-6fb2b39ae0da",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloud.korroh.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/remote.php/dav/89f7661a0011ce46",
-        "headers": {
-          "Host": "cloud.korroh.com"
-        }
-      }
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

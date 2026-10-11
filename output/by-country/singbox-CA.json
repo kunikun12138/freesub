@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 01 - xiaohe",
-      "server": "149.22.95.183",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
       "server": "51.222.136.236",
       "server_port": 8882,
       "method": "aes-256-gcm",
       "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 02 - xiaohe",
+      "server": "138.197.141.58",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vmess",
@@ -28,8 +28,32 @@
       "security": "auto"
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 04 - xiaohe",
+      "server": "51.79.49.116",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
+      "server": "51.79.85.185",
+      "server_port": 8118,
+      "method": "aes-256-gcm",
+      "password": "cdBIDV42DCwnfIN"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 06 - xiaohe",
+      "server": "149.22.95.183",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 07 - xiaohe",
       "server": "23.162.200.198",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -37,35 +61,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaohe",
-      "server": "ca225.vpnbook.com",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - xiaohe",
-      "server": "138.197.141.58",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - xiaohe",
+      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaohe",
       "server": "137.184.174.93",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaohe",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "vless",
@@ -78,7 +78,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -90,10 +90,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 10 - xiaohe",
-      "server": "51.79.85.185",
-      "server_port": 8118,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
+      "server": "ca225.vpnbook.com",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
     },
     {
       "type": "vless",
@@ -119,7 +119,23 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 12 - xiaohe",
+      "server": "51.222.155.113",
+      "server_port": 5601,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 13 - xiaohe",
       "server": "51.222.12.127",
+      "server_port": 445,
+      "method": "aes-256-gcm",
+      "password": "zDNVedRFPQexG9v"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 14 - xiaohe",
+      "server": "51.222.141.125",
       "server_port": 445,
       "method": "aes-256-gcm",
       "password": "zDNVedRFPQexG9v"
@@ -140,7 +156,9 @@
         "🇨🇦 加拿大 (Canada) 09 - xiaohe",
         "🇨🇦 加拿大 (Canada) 10 - xiaohe",
         "🇨🇦 加拿大 (Canada) 11 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 12 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 12 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 13 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 14 - xiaohe"
       ]
     },
     {
@@ -158,7 +176,9 @@
         "🇨🇦 加拿大 (Canada) 09 - xiaohe",
         "🇨🇦 加拿大 (Canada) 10 - xiaohe",
         "🇨🇦 加拿大 (Canada) 11 - xiaohe",
-        "🇨🇦 加拿大 (Canada) 12 - xiaohe"
+        "🇨🇦 加拿大 (Canada) 12 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 13 - xiaohe",
+        "🇨🇦 加拿大 (Canada) 14 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
