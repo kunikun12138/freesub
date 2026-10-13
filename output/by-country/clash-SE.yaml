@@ -5,31 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaohe
-  server: swe.wizard.select
+  server: sweedenqfds777.qcloud.surf
+  port: 21223
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
+  server: 5.157.10.149
   port: 443
   udp: true
   type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaohe
-  server: 136.148.211.209
-  port: 25119
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
-  client-fingerprint: chrome
+    public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
+    short-id: fb442438e2223836
+  servername: swerka.loknietotop.digital
+  client-fingerprint: random
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   server: 94.143.231.146
   port: 443

@@ -35,11 +35,19 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true
       }
     },
     {
@@ -48,7 +56,8 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ]
     },
     {
@@ -56,7 +65,8 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
