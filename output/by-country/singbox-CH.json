@@ -18,26 +18,6 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaohe",
-      "server": "138.124.96.88",
-      "server_port": 41826,
-      "uuid": "2eb3f6a0-df6e-49b6-994c-177acdd50a97",
-      "tls": {
-        "enabled": true,
-        "server_name": "sweden.homyak.app",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "httpupgrade",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
       "server": "138.124.63.224",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -57,6 +37,26 @@
       "transport": {
         "type": "grpc",
         "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaohe",
+      "server": "138.124.96.88",
+      "server_port": 41826,
+      "uuid": "2eb3f6a0-df6e-49b6-994c-177acdd50a97",
+      "tls": {
+        "enabled": true,
+        "server_name": "sweden.homyak.app",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "httpupgrade",
+        "path": "/"
       }
     },
     {
