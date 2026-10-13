@@ -13,11 +13,11 @@ proxies:
   password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaohe
   server: 213.183.63.60
-  port: 9049
+  port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  password: aLpQtfEZe445QyHk
 proxy-groups:
 - name: PROXIES
   type: select
