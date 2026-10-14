@@ -19,7 +19,7 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  server: 104.21.48.18
+  server: 172.67.176.3
   port: 2053
   udp: true
   type: trojan
@@ -29,13 +29,6 @@ proxies:
   network: ws
   ws-opts:
     path: /0962
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 94.184.42.18
-  port: 8880
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AWVyUgWWLc4G47GNo_bx2w
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
   - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
 rules:
 - MATCH,PROXIES
