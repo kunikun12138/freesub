@@ -12,18 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: Xsy8Ox4yOV3xLlpxtjzs3X
 - name: 🇿🇦 南非 (South Africa) 02 - xiaohe
-  server: 34.35.186.228
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
-  tls: true
-  reality-opts:
-    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
-    short-id: 89b3a20484eb43ec
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
   server: 34.35.189.111
   port: 443
   udp: true
@@ -35,6 +23,18 @@ proxies:
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇿🇦 南非 (South Africa) 03 - xiaohe
+  server: 34.35.186.228
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8d65c8a7-4876-4556-bb6a-feccfb46ee81
+  tls: true
+  reality-opts:
+    public-key: bSN0cv0VMxmYZsNsMkkLndOTHZu74C1htJ2M71QMaVE
+    short-id: 89b3a20484eb43ec
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
