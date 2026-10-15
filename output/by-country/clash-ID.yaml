@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇱 AL 01 - xiaohe
-  server: 83.166.238.57
-  port: 443
+- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+  server: 103.172.197.2
+  port: 29172
   udp: true
   type: vless
-  uuid: a16a3e32-8d63-4dec-8c67-1361388a64ca
+  uuid: 3977434d-6a9b-4858-8ced-80326ba5e367
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: QXw5YbUfPssdgGZIfAol5PonYGWSjlWsWpoij93VU20
-    short-id: b276e04195d77f6b
-  servername: eh3.vk.ru
+    public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
+  servername: aws.amazon.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇱 AL 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇱 AL 01 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
 rules:
 - MATCH,PROXIES
