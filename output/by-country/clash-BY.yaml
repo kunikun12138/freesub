@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: freesocks.work
-  port: 2052
+- name: 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
+  server: 178.172.227.124
+  port: 14430
   udp: true
   type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  uuid: 1af36694-b548-4b18-89a0-bc076eab4ed7
   network: ws
   ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
+    path: /vless
     headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: 178.172.227.124
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
 rules:
 - MATCH,PROXIES
