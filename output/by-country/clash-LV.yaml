@@ -31,7 +31,7 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaohe
-  server: 185.220.223.25
+  server: lv.aiage.work
   port: 443
   udp: true
   type: vless
