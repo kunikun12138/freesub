@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaohe
-  server: 18.171.245.198
+  server: 34.253.212.171
   port: 443
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     host: []
     path: /
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaohe
-  server: 34.253.212.171
+  server: 18.171.245.198
   port: 443
   udp: true
   type: vless

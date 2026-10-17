@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: 143.246.41.31
   port: 443
   udp: true
@@ -25,7 +17,7 @@ proxies:
     short-id: 7f3a91c2d8e640ab
   servername: ees92.shhflow.xyz
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   server: ee-1-1.unturned-rust-dead.lol
   port: 443
   udp: true
@@ -39,20 +31,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ee-grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  server: 93.89.220.37
-  port: 443
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+  server: 109.206.241.10
+  port: 449
   udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
   server: ees92.shhflow.xyz
   port: 5443
   udp: true
@@ -69,7 +56,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,6 +65,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
 rules:
 - MATCH,PROXIES

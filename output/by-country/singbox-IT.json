@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - xiaohe",
-      "server": "95.141.37.24",
-      "server_port": 18172,
-      "method": "aes-128-gcm",
-      "password": "b6af4bce5459c412a0d6dcdd6921259b"
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
       "type": "shadowsocks",
@@ -31,7 +31,7 @@
         "server_name": "italynew.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -43,6 +43,26 @@
     {
       "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 04 - xiaohe",
+      "server": "57.131.38.163",
+      "server_port": 2053,
+      "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc",
+          "short_id": "5b8a942318178e7b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
       "server": "82.118.16.187",
       "server_port": 443,
       "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
@@ -58,26 +78,6 @@
           "enabled": true,
           "public_key": "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU",
           "short_id": "cd6065902eea7a02"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 05 - xiaohe",
-      "server": "57.131.38.163",
-      "server_port": 2053,
-      "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc",
-          "short_id": "5b8a942318178e7b"
         }
       }
     },
@@ -103,13 +103,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 07 - xiaohe",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -119,8 +112,7 @@
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
         "🇮🇹 意大利 (Italy) 04 - xiaohe",
         "🇮🇹 意大利 (Italy) 05 - xiaohe",
-        "🇮🇹 意大利 (Italy) 06 - xiaohe",
-        "🇮🇹 意大利 (Italy) 07 - xiaohe"
+        "🇮🇹 意大利 (Italy) 06 - xiaohe"
       ]
     },
     {
@@ -132,8 +124,7 @@
         "🇮🇹 意大利 (Italy) 03 - xiaohe",
         "🇮🇹 意大利 (Italy) 04 - xiaohe",
         "🇮🇹 意大利 (Italy) 05 - xiaohe",
-        "🇮🇹 意大利 (Italy) 06 - xiaohe",
-        "🇮🇹 意大利 (Italy) 07 - xiaohe"
+        "🇮🇹 意大利 (Italy) 06 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
