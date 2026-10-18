@@ -5,21 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 104.21.23.80
-  port: 443
+  server: mlxytmp.deepfind.site
+  port: 10298
   udp: true
-  type: vmess
-  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: c752c174-41d2-41c3-ac2a-e4c0df9e5482
+  flow: xtls-rprx-vision
   tls: true
-  servername: my.lovehk.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /KualaLumpur1
-    headers:
-      Host: my.lovehk.xyz
+  reality-opts:
+    public-key: KZUlOnK6frAx_HFpwG0TGu-Lwhtu4507gIGNsLK-kko
+    short-id: d0b14a7f0c52
+  servername: www.cloudflare.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

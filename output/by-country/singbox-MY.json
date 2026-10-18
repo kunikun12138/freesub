@@ -4,22 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaohe",
-      "server": "104.21.23.80",
-      "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "security": "auto",
+      "server": "mlxytmp.deepfind.site",
+      "server_port": 10298,
+      "uuid": "c752c174-41d2-41c3-ac2a-e4c0df9e5482",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "my.lovehk.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/KualaLumpur1",
-        "headers": {
-          "Host": "my.lovehk.xyz"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KZUlOnK6frAx_HFpwG0TGu-Lwhtu4507gIGNsLK-kko",
+          "short_id": "d0b14a7f0c52"
         }
       }
     },

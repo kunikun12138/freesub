@@ -17,17 +17,16 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
-  server: 46.28.71.247
-  port: 443
+  server: 196.245.52.149
+  port: 25535
   udp: true
   type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
   tls: true
   reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+  servername: www.microsoft.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
