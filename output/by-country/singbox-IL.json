@@ -25,28 +25,18 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "31.57.185.22",
-      "server_port": 48703,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "cY45fErC5uH188+yEV169Uxxo9gQiR+bzWTKI/XaupY=:8m1MQ4gMgcocrFpqhsWaOQey7OvP61xdflM/ZHbeZAY="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
