@@ -16,7 +16,7 @@ proxies:
     public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaohe
   server: b58e68t.lt1.h1clayd.click
   port: 443
