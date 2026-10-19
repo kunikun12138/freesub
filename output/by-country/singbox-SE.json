@@ -20,13 +20,17 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaohe",
-      "server": "45.12.63.219",
+      "server": "edge-lab-b.10media.top",
       "server_port": 443,
       "uuid": "9cb8d71c-fe06-4402-a591-eaa1f173b890",
       "tls": {
         "enabled": true,
         "server_name": "edge-lab-b.10media.top",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "grpc",
