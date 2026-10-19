@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -27,33 +16,18 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: mci.amir12.ir
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: bs.90909.club
-  port: 2096
-  udp: true
-  type: vless
-  uuid: e667f5c7-6b38-48ef-ab89-40519713afb0
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: id.vk.com
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc-reality
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: 2.26.3.75
   port: 443
   udp: true
@@ -69,8 +43,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,7 +51,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaohe
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
