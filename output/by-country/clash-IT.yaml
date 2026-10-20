@@ -5,13 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01 - xiaohe
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 02 - xiaohe
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 02 - xiaohe
+- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
   server: 31.59.180.155
   port: 443
   udp: true
@@ -23,8 +29,15 @@ proxies:
     public-key: _0bRaAOYHd4ccDCmnlIq9I13WLRuT4LzlXfV_GGHKE0
     short-id: 5aab0b0401044801
   servername: italynew.nztvpn.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 03 - xiaohe
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+  server: 185.164.175.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 05 - xiaohe
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -35,8 +48,8 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 04 - xiaohe
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 06 - xiaohe
   server: 82.118.16.187
   port: 443
   udp: true
@@ -58,6 +71,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
+  - 🇮🇹 意大利 (Italy) 05 - xiaohe
+  - 🇮🇹 意大利 (Italy) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +82,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02 - xiaohe
   - 🇮🇹 意大利 (Italy) 03 - xiaohe
   - 🇮🇹 意大利 (Italy) 04 - xiaohe
+  - 🇮🇹 意大利 (Italy) 05 - xiaohe
+  - 🇮🇹 意大利 (Italy) 06 - xiaohe
 rules:
 - MATCH,PROXIES
