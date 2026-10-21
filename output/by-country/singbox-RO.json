@@ -6,12 +6,12 @@
     {
       "type": "trojan",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - xiaohe",
-      "server": "it1.dedushka.top",
+      "server": "de1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "it1.dedushka.top",
+        "server_name": "de1.dedushka.top",
         "insecure": false
       }
     },
@@ -23,19 +23,19 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "www.amazon.com",
         "insecure": true
       }
     },
     {
       "type": "trojan",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaohe",
-      "server": "de1.dedushka.top",
+      "server": "it1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "de1.dedushka.top",
+        "server_name": "it1.dedushka.top",
         "insecure": false
       }
     },
