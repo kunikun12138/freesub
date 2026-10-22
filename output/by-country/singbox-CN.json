@@ -5,14 +5,17 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01 - xiaohe",
-      "server": "courses.mftplus.qzz.io",
-      "server_port": 2096,
-      "uuid": "b9ede7a5-5b4b-4aee-ac37-2c307e587e47",
+      "tag": "🇨🇳 CN 01 - xiaohe",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
-        "server_name": "courses.mftplus.qzz.io",
+        "server_name": "vpn.cintaku.qzz.io",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +23,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "path": "/vlessws",
         "headers": {
-          "Host": "courses.mftplus.qzz.io"
+          "Host": "vpn.cintaku.qzz.io"
         }
       }
     },
@@ -31,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - xiaohe"
+        "🇨🇳 CN 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
