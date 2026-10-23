@@ -20,7 +20,7 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 147.45.175.81
+  server: xsru1.ddnsfree.com
   port: 443
   udp: true
   type: vless
@@ -28,7 +28,7 @@ proxies:
   tls: true
   servername: xsru1.ddnsfree.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
