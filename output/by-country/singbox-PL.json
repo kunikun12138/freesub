@@ -26,7 +26,11 @@
       "tls": {
         "enabled": true,
         "server_name": "ru1.radiolumens.uk",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "grpc",

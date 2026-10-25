@@ -15,19 +15,19 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
-  client-fingerprint: firefox
+  client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 147.45.47.83
+  server: 193.160.140.99
   port: 443
   udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
   server: 45.128.78.176
   port: 443
@@ -65,25 +65,14 @@ proxies:
   servername: apple.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 193.160.140.99
-  port: 443
+  server: srv-17e124.21freedom.net
+  port: 11592
   udp: true
-  type: vless
-  uuid: fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ''
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 195.133.23.50
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
   server: 103.88.243.142
   port: 11592
   udp: true
@@ -91,18 +80,25 @@ proxies:
   password: 41edb44c8e
   sni: srv-17e124.21freedom.net
   skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
+  server: 46.17.43.227
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 193.160.141.2
+  server: 194.87.143.165
   port: 8443
   udp: true
   type: vless
-  uuid: d24e0961-dd20-4528-8796-2a974e79348e
-  flow: xtls-rprx-vision
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
+  servername: wsru1.wba-pn.ru
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇷🇺 俄罗斯 (Russia) 10 - xiaohe
   server: 147.45.175.81
   port: 443
@@ -117,6 +113,18 @@ proxies:
   grpc-opts:
     grpc-service-name: grpc-ru
 - name: 🇷🇺 俄罗斯 (Russia) 11 - xiaohe
+  server: 147.45.47.83
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
   server: xsru1.ddnsfree.com
   port: 443
   udp: true
@@ -129,21 +137,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaohe
-  server: santehdv.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
-  tls: true
-  servername: santehdv.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/stream/qUWu2oaFgxAw
-    headers:
-      Host: santehdv.site
 proxy-groups:
 - name: PROXIES
   type: select
