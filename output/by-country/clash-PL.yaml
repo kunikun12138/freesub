@@ -5,12 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaohe
-  server: 5.22.221.127
-  port: 443
+  server: 191.217.211.128
+  port: 20270
+  udp: true
+  type: hysteria2
+  password: dd56bf58-4c37-42e1-9e75-4b6c67939ffd
+  sni: pl1.song69.fun
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  server: site.teslamotor.site
+  port: 20001
   udp: true
   type: vless
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
-- name: 🇵🇱 波兰 (Poland) 02 - xiaohe
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -20,12 +28,6 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 77.232.135.141
   port: 8445
@@ -35,10 +37,41 @@ proxies:
   tls: true
   servername: ru1.radiolumens.uk
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 05 - xiaohe
+  server: 201.10.91.98
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl3.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /PL3W
+    headers:
+      Host: pl3.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
+  server: 201.10.91.68
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl1.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /PL1W
+    headers:
+      Host: pl1.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
   server: 54.37.131.126
   port: 80
   udp: true
@@ -51,35 +84,29 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06 - xiaohe
-  server: tr2.soft10.ir
-  port: 2053
+- name: 🇵🇱 波兰 (Poland) 08 - xiaohe
+  server: 201.10.91.127
+  port: 8443
   udp: true
   type: vless
-  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  servername: tr2.soft10.ir
+  servername: pl2.pad-sservice.lat
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /PL2W
     headers:
-      Host: tr2.soft10.ir
-- name: 🇵🇱 波兰 (Poland) 07 - xiaohe
-  server: pl4-node.rumedia-cdn.com
-  port: 2096
+      Host: pl2.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 09 - xiaohe
+  server: 92.118.150.146
+  port: 443
   udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: stb6390.rumedia-cdn.com
+  type: trojan
+  password: Trojan@82164024
+  sni: pl.tronsg.com
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: stb6390.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +119,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +133,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaohe
   - 🇵🇱 波兰 (Poland) 06 - xiaohe
   - 🇵🇱 波兰 (Poland) 07 - xiaohe
+  - 🇵🇱 波兰 (Poland) 08 - xiaohe
+  - 🇵🇱 波兰 (Poland) 09 - xiaohe
 rules:
 - MATCH,PROXIES
