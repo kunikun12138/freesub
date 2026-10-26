@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaohe
-  server: 149.104.90.21
+  server: mx001.zestapp778.com
   port: 19167
   udp: true
   type: vless
