@@ -26,20 +26,18 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaohe
-  server: 104.16.10.2
+  server: 45.154.26.63
   port: 443
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: ff85e702-b605-4109-884d-2c1f065d0954
+  flow: xtls-rprx-vision
   tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
+  reality-opts:
+    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
+    short-id: 3c032a7e
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
