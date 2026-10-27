@@ -5,17 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaohe",
-      "server": "130.94.53.51",
-      "server_port": 15656,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tag": "🇲🇰 MK 01 - xiaohe",
+      "server": "89.185.82.151",
+      "server_port": 10443,
+      "uuid": "0869a7d7-b8e8-42be-8bca-84b0ab07744a",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ph001.zestapp778.com",
-        "insecure": false,
+        "server_name": "stackoverflow.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "XNfikFybWtjJjWU7-QBGrr-D9YUW0uSK_sR7mDDUmRU",
+          "short_id": "6ba85179"
         }
       }
     },
@@ -24,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇲🇰 MK 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01 - xiaohe"
+        "🇲🇰 MK 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
