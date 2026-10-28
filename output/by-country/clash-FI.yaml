@@ -6,15 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
   server: 45.149.147.213
-  port: 4444
+  port: 4443
   udp: true
-  type: trojan
-  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  sni: 45-149-147-213.sslip.io
+  type: vless
+  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  tls: true
+  servername: 45-149-147-213.sslip.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: kobedin-server1-trojan
+    grpc-service-name: kobedin-server1-vless
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 45.144.234.157
   port: 14430
@@ -28,16 +30,15 @@ proxies:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
   server: 45.149.147.213
-  port: 4443
+  port: 4444
   udp: true
-  type: vless
-  uuid: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  tls: true
-  servername: 45-149-147-213.sslip.io
+  type: trojan
+  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  sni: 45-149-147-213.sslip.io
   skip-cert-verify: false
   network: grpc
   grpc-opts:
-    grpc-service-name: kobedin-server1-vless
+    grpc-service-name: kobedin-server1-trojan
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
   server: 95.216.27.15
   port: 2053
@@ -49,24 +50,9 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 2.27.13.152
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  tls: true
-  servername: st4834a.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st4834a.rumedia-cdn.com
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
-  server: 65.109.212.193
+  server: hw3.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
@@ -79,6 +65,21 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: 84.22.150.39
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
