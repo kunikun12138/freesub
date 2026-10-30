@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
-  server: 216.24.57.225
-  port: 2083
+- name: 🇨🇿 捷克 (Czech) 01 - xiaohe
+  server: 162.159.152.4
+  port: 443
   udp: true
   type: vless
-  uuid: 3bcbd7ef-e05b-4745-a1de-5ecf98dd2fb6
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
   tls: true
-  servername: pol.netvia.ir
+  servername: rayan-007.maxima.dpdns.org
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /wss
+    path: /
     headers:
-      Host: pol.netvia.ir
+      Host: rayan-007.maxima.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - xiaohe
+  - 🇨🇿 捷克 (Czech) 01 - xiaohe
 rules:
 - MATCH,PROXIES
