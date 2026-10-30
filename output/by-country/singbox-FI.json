@@ -6,21 +6,33 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaohe",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "server": "65.109.211.81",
+      "server_port": 465,
+      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
+      "tls": {
+        "enabled": true,
+        "server_name": "hw6.divarkhaghazi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/",
         "headers": {
-          "Host": "45.144.234.157"
+          "Host": "hw6.divarkhaghazi.com."
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaohe",
-      "server": "hw3.divarkhaghazi.com",
+      "server": "65.109.210.221",
       "server_port": 465,
       "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
       "tls": {
@@ -29,7 +41,11 @@
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -42,21 +58,15 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaohe",
-      "server": "45.144.52.187",
-      "server_port": 443,
-      "uuid": "7b22dce8-7ebd-425b-8ca4-7b6190321985",
-      "tls": {
-        "enabled": true,
-        "server_name": "b.fi-1.bnc-gt.co.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
       }
     },
     {
