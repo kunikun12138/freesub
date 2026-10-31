@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe",
-      "server": "45.207.207.25",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe",
+      "server": "112.169.175.199",
+      "server_port": 31157,
+      "uuid": "bd2fb303-b4c7-49af-a8e3-5c6f11b005dd"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

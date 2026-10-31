@@ -16,8 +16,29 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
+      "server": "2.26.255.215",
+      "server_port": 443,
+      "uuid": "69e41e64-a832-471a-b740-94577ca85520",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
+          "short_id": "50"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -31,76 +52,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaohe",
-      "server": "2.26.6.1",
-      "server_port": 2087,
-      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.26.6.1",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaohe",
-      "server": "31.59.143.147",
-      "server_port": 443,
-      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2.waspnest.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk",
-          "short_id": "ae97223a8f799889"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaohe",
-      "server": "77.232.135.141",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru1.radiolumens.uk",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ]
     },
     {
@@ -109,9 +67,7 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaohe",
         "🇵🇱 波兰 (Poland) 02 - xiaohe",
-        "🇵🇱 波兰 (Poland) 03 - xiaohe",
-        "🇵🇱 波兰 (Poland) 04 - xiaohe",
-        "🇵🇱 波兰 (Poland) 05 - xiaohe"
+        "🇵🇱 波兰 (Poland) 03 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

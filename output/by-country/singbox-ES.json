@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -58,12 +58,12 @@
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 04 - xiaohe",
-      "server": "66.163.118.131",
+      "server": "66.163.118.244",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
