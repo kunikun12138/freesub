@@ -24,6 +24,14 @@ proxies:
   sni: diffoscope.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
+  server: promo.betust.net
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   server: 31.172.65.4
   port: 8443
   udp: true
@@ -36,14 +44,6 @@ proxies:
     short-id: 0e7741edc378622f
   servername: www.bing.com
   client-fingerprint: qq
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaohe
-  server: promo.betust.net
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

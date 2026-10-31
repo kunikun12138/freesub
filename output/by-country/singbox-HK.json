@@ -15,7 +15,7 @@
         "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -32,7 +32,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "t.me",
+        "server_name": "202.146.222.174",
         "insecure": true
       }
     },
@@ -44,7 +44,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8",
+        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
         "insecure": true
       }
     },
@@ -56,7 +56,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "202.146.222.29",
         "insecure": true
       }
     },
