@@ -6,21 +6,17 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - xiaohe",
-      "server": "server.slavkiti.monster",
+      "server": "178.208.89.21",
       "server_port": 443,
-      "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "bbcab8fa80a3"
+          "fingerprint": "firefox"
         }
       }
     },
