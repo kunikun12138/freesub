@@ -5,29 +5,58 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
-  server: 202.146.222.29
+  server: 165.154.63.139
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
-  skip-cert-verify: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
+  server: vipccc.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5bead32f-a987-4f57-b1a8-6698778facda
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vipccc.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ray_proxy
+    headers:
+      Host: vipccc.cc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +65,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +75,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 01 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 02 - xiaohe
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 04 - xiaohe
+  - 🇭🇰 中国香港 (Hong Kong) 05 - xiaohe
 rules:
 - MATCH,PROXIES
