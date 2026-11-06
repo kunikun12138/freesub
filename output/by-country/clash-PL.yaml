@@ -36,21 +36,6 @@ proxies:
   skip-cert-verify: true
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 04 - xiaohe
-  server: 145.63.143.205
-  port: 8444
-  udp: true
-  type: vless
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
-  tls: true
-  servername: pl1.meshbeat.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/10be32b380/telemetry
-    headers:
-      Host: pl1.meshbeat.online
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
   server: 129.101.100.126
   port: 8443
   udp: true
@@ -63,6 +48,8 @@ proxies:
   network: ws
   ws-opts:
     path: /static/js/runtime.9d03c7.js
+    headers:
+      Host: lte-v2-ws.gacvpn.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +59,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +68,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
