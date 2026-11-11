@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe",
-      "server": "191.44.112.170",
+      "server": "191.44.112.170.sslip.io",
       "server_port": 443,
       "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
       "tls": {
