@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaohe
-  server: 191.44.112.170.sslip.io
+  server: 191.44.112.170
   port: 443
   udp: true
   type: trojan
