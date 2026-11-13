@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaohe
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 02 - xiaohe
   server: 13.140.56.100
   port: 14430
@@ -28,6 +28,21 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaohe
+  server: 13.140.253.35
+  port: 443
+  udp: true
+  type: vless
+  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  tls: true
+  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /362b2b2c7197d648
+    headers:
+      Host: xray-m0642ki4-silver-nebula-10.cloady.io
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 13.140.253.35
   port: 443
   udp: true
@@ -50,6 +65,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +74,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - xiaohe
   - 🇮🇳 印度 (India) 02 - xiaohe
   - 🇮🇳 印度 (India) 03 - xiaohe
+  - 🇮🇳 印度 (India) 04 - xiaohe
 rules:
 - MATCH,PROXIES
