@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaohe
+  server: 168.138.205.100
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 02 - xiaohe
   server: 8.211.175.236
   port: 8443
   udp: true
@@ -12,57 +19,21 @@ proxies:
   password: u63SxILNwtrQZ7Y1ZrFaZfsA
   sni: 8.211.175.236
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 02 - xiaohe
+- name: 🇯🇵 日本 (Japan) 03 - xiaohe
   server: 138.3.208.26
   port: 50160
   udp: true
   type: hysteria2
   password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
+  sni: '1'
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03 - xiaohe
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 04 - xiaohe
-  server: zfapi.zalolink.com
-  port: 43149
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
-    short-id: 15aa0ad4
-  servername: psstatic.cdn.bcebos.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 05 - xiaohe
   server: 84.247.155.196
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 06 - xiaohe
-  server: JP032001.ssgreen.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 16586ea9-a30d-4323-97f3-1907b27f439f
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: JP032001.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032001.ssgreen.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +43,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - xiaohe
   - 🇯🇵 日本 (Japan) 03 - xiaohe
   - 🇯🇵 日本 (Japan) 04 - xiaohe
-  - 🇯🇵 日本 (Japan) 05 - xiaohe
-  - 🇯🇵 日本 (Japan) 06 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +52,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 02 - xiaohe
   - 🇯🇵 日本 (Japan) 03 - xiaohe
   - 🇯🇵 日本 (Japan) 04 - xiaohe
-  - 🇯🇵 日本 (Japan) 05 - xiaohe
-  - 🇯🇵 日本 (Japan) 06 - xiaohe
 rules:
 - MATCH,PROXIES
