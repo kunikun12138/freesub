@@ -25,17 +25,16 @@ proxies:
   grpc-opts:
     grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  server: 201.51.11.65
-  port: 443
+  server: 5.59.204.81
+  port: 8443
   udp: true
   type: vless
-  uuid: 1e2b9c0c-4f9b-56f5-a062-1c4f2d2aa200
+  uuid: 97fd7807-7e2b-49da-8a0e-e40197088f97
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: GiDgVRVYrTkv1mZJeFVWkr736Iey2kqLM6L0eUbffV8
-  servername: absolute-disaster.org
-  client-fingerprint: chrome
+  servername: id-6af3f40b.adhil.uk
+  skip-cert-verify: false
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
