@@ -14,18 +14,6 @@
     {
       "type": "hysteria2",
       "tag": "🇯🇵 日本 (Japan) 02 - xiaohe",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
-      "tls": {
-        "enabled": true,
-        "server_name": "8.211.175.236",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 03 - xiaohe",
       "server": "138.3.208.26",
       "server_port": 50160,
       "password": "184cdec28da5a09450803c8debcd2cc9",
@@ -37,11 +25,42 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - xiaohe",
+      "tag": "🇯🇵 日本 (Japan) 03 - xiaohe",
       "server": "84.247.155.196",
       "server_port": 443,
       "method": "aes-256-gcm",
       "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 04 - xiaohe",
+      "server": "104.16.10.56",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp3.yohototo.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 05 - xiaohe",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
+      "tls": {
+        "enabled": true,
+        "server_name": "bing.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
@@ -51,7 +70,8 @@
         "🇯🇵 日本 (Japan) 01 - xiaohe",
         "🇯🇵 日本 (Japan) 02 - xiaohe",
         "🇯🇵 日本 (Japan) 03 - xiaohe",
-        "🇯🇵 日本 (Japan) 04 - xiaohe"
+        "🇯🇵 日本 (Japan) 04 - xiaohe",
+        "🇯🇵 日本 (Japan) 05 - xiaohe"
       ]
     },
     {
@@ -61,7 +81,8 @@
         "🇯🇵 日本 (Japan) 01 - xiaohe",
         "🇯🇵 日本 (Japan) 02 - xiaohe",
         "🇯🇵 日本 (Japan) 03 - xiaohe",
-        "🇯🇵 日本 (Japan) 04 - xiaohe"
+        "🇯🇵 日本 (Japan) 04 - xiaohe",
+        "🇯🇵 日本 (Japan) 05 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

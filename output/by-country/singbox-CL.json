@@ -4,18 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-      "server": "196.240.181.9",
-      "server_port": 25318,
-      "password": "b36a14f8-fc3f-4142-968f-48031cf5f330",
+      "type": "trojan",
+      "tag": "🇨🇱 智利 (Chile) 01 - xiaohe",
+      "server": "64.176.7.205",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "775c8bt.lt4.h1clayd.click",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
+        "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
+        "insecure": false
       }
     },
     {
@@ -23,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe"
+        "🇨🇱 智利 (Chile) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
