@@ -6,13 +6,6 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "150.95.109.109",
-      "server_port": 2086,
-      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
-    },
-    {
-      "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
       "server": "kir3.crackerbinam.org",
       "server_port": 56026,
       "uuid": "a1f0cbb8-c74a-4c27-b881-7b14d96aece1",
@@ -29,6 +22,13 @@
           "short_id": "99676967e6867063"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+      "server": "150.95.109.109",
+      "server_port": 2086,
+      "uuid": "b83faafc-cbb7-4655-99d4-2c4c39a49d1b"
     },
     {
       "type": "selector",

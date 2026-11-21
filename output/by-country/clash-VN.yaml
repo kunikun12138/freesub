@@ -5,12 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaohe
-  server: 150.95.109.109
-  port: 2086
-  udp: true
-  type: vless
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
-- name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
   server: kir3.crackerbinam.org
   port: 56026
   udp: true
@@ -22,6 +16,12 @@ proxies:
     short-id: 99676967e6867063
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇻🇳 越南 (Vietnam) 02 - xiaohe
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
