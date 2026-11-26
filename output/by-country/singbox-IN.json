@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -26,19 +26,23 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - xiaohe",
-      "server": "13.140.253.35",
+      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
       "server_port": 443,
-      "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
+      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
       "tls": {
         "enabled": true,
-        "server_name": "xray-ikmqcro3-rapid-river-6.cloady.io",
-        "insecure": false
+        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/c54a815e676d9acc",
+        "path": "/0175469f14317d82",
         "headers": {
-          "Host": "xray-ikmqcro3-rapid-river-6.cloady.io"
+          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
         }
       }
     },

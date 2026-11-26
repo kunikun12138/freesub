@@ -5,10 +5,10 @@
   "outbounds": [
     {
       "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
-      "server": "a54ge.df6h451rh.xin",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
+      "server": "ibsdsf.df6h451rh.xin",
       "server_port": 443,
-      "password": "0324fbc29561",
+      "password": "2902c46c8493",
       "tls": {
         "enabled": true,
         "server_name": "docs.microsoft.com",
@@ -18,12 +18,12 @@
     {
       "type": "anytls",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
-      "server": "ibsdsf.df6h451rh.xin",
+      "server": "5641sdds.df6h451rh.xin",
       "server_port": 443,
-      "password": "2902c46c8493",
+      "password": "0324fbc29561",
       "tls": {
         "enabled": true,
-        "server_name": "docs.microsoft.com",
+        "server_name": "images.ctfassets.net",
         "insecure": true
       }
     },
@@ -40,7 +40,7 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
         "🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe"
       ]
@@ -49,7 +49,7 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaohe",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaohe",
         "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaohe",
         "🇩🇪 德国 (Germany) 03 (移动家宽) - xiaohe"
       ],
