@@ -5,15 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  server: 143.246.136.128
-  port: 50738
+  server: 18.172.170.42
+  port: 443
   udp: true
   type: vless
-  uuid: 56665684-5ac0-4ba9-9d49-8b258fb57974
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
   tls: true
-  servername: turkey-ip1.mmdaqaorg.xyz
+  servername: deldgy5xz81zm.cloudfront.net
   skip-cert-verify: false
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: deldgy5xz81zm.cloudfront.net
 proxy-groups:
 - name: PROXIES
   type: select
