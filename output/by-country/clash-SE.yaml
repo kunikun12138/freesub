@@ -23,7 +23,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: leviko-se4581.shopingggg.ir
+  server: 138.124.86.230
   port: 48115
   udp: true
   type: vless
@@ -31,6 +31,7 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
